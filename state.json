@@ -1,8 +1,8 @@
 {
-  "task": "Replace mobile header lockup with a legible text-only wordmark",
+  "task": "Fix invisible text in the hardware section",
   "stage": "complete",
   "nextStep": "None",
   "blockers": [],
   "artifacts": ["src/App.tsx", "src/styles.css", "public/images/sovereign-cash-logo.png"],
-  "timestamp": "2026-08-27T08:14:00Z"
+  "timestamp": "2026-08-27T08:18:00Z"
 }
