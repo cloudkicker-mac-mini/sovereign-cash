@@ -1,8 +1,8 @@
 {
-  "task": "Clarify Sovereign Cash Co. as Tulalip Tribes member-owned",
-  "stage": "complete",
-  "nextStep": "None",
+  "task": "Integrate supplied Sovereign Cash Co. logo and revise FAQ copy",
+  "stage": "verified",
+  "nextStep": "Commit and publish to GitHub Pages",
   "blockers": [],
-  "artifacts": ["src/App.tsx"],
-  "timestamp": "2026-08-27T07:55:00Z"
+  "artifacts": ["src/App.tsx", "src/styles.css", "public/images/sovereign-cash-logo.png"],
+  "timestamp": "2026-08-27T08:08:00Z"
 }
