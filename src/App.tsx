@@ -23,6 +23,7 @@ const faqs = [
 
 function Mark(){return <div className="mark" aria-hidden="true"><i/><i/><i/></div>}
 function BrandLogo({compact=false}:{compact?:boolean}){return <img className={`brandLogo${compact?' compact':''}`} src={`${import.meta.env.BASE_URL}images/sovereign-cash-logo.png`} alt="Sovereign Cash Co. — The Most Luxurious ATM Experience"/>}
+function HeaderWordmark(){return <span className="headerWordmark"><strong>SOVEREIGN</strong><span><i/>CASH CO.<i/></span></span>}
 function Reveal({children,className=''}:{children:React.ReactNode,className?:string}){return <div className={`reveal ${className}`}>{children}</div>}
 
 export function App(){
@@ -30,7 +31,7 @@ export function App(){
   const [inputs,setInputs]=useState({transactions:600,surcharge:3.5,venueShare:40,lift:18});
   const calc=useMemo(()=>calculateEconomics(inputs),[inputs]);
   return <main>
-    <header><a className="brand" href="#top"><BrandLogo compact/></a><button className="menu" aria-label="Toggle navigation" onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button><nav className={menu?'open':''}>{[['Placements','placements'],['Services','services'],['SignalOS','signalos'],['Story','story']].map(([label,id])=><a key={id} onClick={()=>setMenu(false)} href={`#${id}`}>{label}</a>)}<a className="navCta" href="#partner">See it in your space <ArrowRight size={16}/></a></nav></header>
+    <header><a className="brand" href="#top" aria-label="Sovereign Cash Co."><HeaderWordmark/></a><button className="menu" aria-label="Toggle navigation" onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button><nav className={menu?'open':''}>{[['Placements','placements'],['Services','services'],['SignalOS','signalos'],['Story','story']].map(([label,id])=><a key={id} onClick={()=>setMenu(false)} href={`#${id}`}>{label}</a>)}<a className="navCta" href="#partner">See it in your space <ArrowRight size={16}/></a></nav></header>
 
     <section className="hero heroPhoto" id="top"><img src={`${import.meta.env.BASE_URL}images/placement-restaurant.webp`} alt="Luxury black and copper ATM placed inside an upscale restaurant"/><div className="heroShade"/><div className="heroCopy"><p className="eyebrow"><span/> Native-owned · Locally operated</p><h1>A better ATM<br/>for <em>better places.</em></h1><p className="dek">Beautifully designed cash access for restaurants, hotels, nightlife, retail and gathering places—installed, managed and monitored for you.</p><div className="heroActions"><a className="button copper" href="#placements">Picture it in your business <ArrowRight/></a><a className="textLink" href="#partner">Request a placement review <span>↓</span></a></div></div><div className="heroProof"><span>01</span><div><small>SHOWN IN</small><b>Restaurant · Entry placement</b><em>Obsidian + copper finish</em></div></div></section>
 
