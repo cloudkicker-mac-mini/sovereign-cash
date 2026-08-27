@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { ArrowRight, BarChart3, CalendarDays, Check, ChevronDown, CircleDollarSign, Gauge, HeartHandshake, Languages, MapPin, Menu, Radio, Route, ShieldCheck, Sparkles, Store, Users, X, Zap } from 'lucide-react';
 import { calculateEconomics } from './calculator';
+import { ResearchBrief } from './ResearchBrief';
 
 const money = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});
 const services = [
@@ -27,6 +28,7 @@ function HeaderWordmark(){return <span className="headerWordmark"><strong>SOVERE
 function Reveal({children,className=''}:{children:React.ReactNode,className?:string}){return <div className={`reveal ${className}`}>{children}</div>}
 
 export function App(){
+  if(window.location.hash === '#/brief/atm-economics-a7c9') return <ResearchBrief/>;
   const [menu,setMenu]=useState(false); const [openFaq,setOpenFaq]=useState(0);
   const [inputs,setInputs]=useState({transactions:600,surcharge:3.5,venueShare:40,lift:18});
   const calc=useMemo(()=>calculateEconomics(inputs),[inputs]);
