@@ -18,7 +18,7 @@ const faqs = [
   ['What does a venue pay?','Placement models can be structured around venue traffic and needs—including full-service placement, shared revenue, purchase or event-specific service. Every proposal is transparent.'],
   ['How quickly are machines serviced?','SignalOS is designed to flag issues before guests notice them and route the right response. Service commitments would be defined by market and venue tier.'],
   ['Can the ATM match our brand?','Yes. Curated wraps, interface themes and placement details can make the machine feel intentional—from understated black-on-black to a full branded moment.'],
-  ['What makes Sovereign Cash Co. Native-owned?','Native ownership would shape the company’s governance, partnerships and approach to community value—not function as a decorative marketing claim. Formal certifications would be displayed only after completion.']
+  ['What makes Sovereign Cash Co. Native-owned?','Sovereign Cash Co. is owned by a Tulalip Tribes member—not simply inspired by Native identity. That ownership guides who we build relationships with, how we show up for local businesses and how we create value beyond an ATM transaction. We prioritize honest partnerships, opportunities for Tribal and local vendors, dependable cash access and technology that helps keep more economic activity circulating close to home. Native ownership is part of the company’s leadership and accountability—not a decorative marketing claim. Any formal certifications will be displayed only after they are completed.']
 ];
 
 function Mark(){return <div className="mark" aria-hidden="true"><i/><i/><i/></div>}
