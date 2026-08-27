@@ -14,4 +14,5 @@
 .footerBrand .brandLogo{width:210px;filter:none}
 .storyArt .brandLogo{mix-blend-mode:screen}
 .headerWordmark{display:flex;flex-direction:column;align-items:center;color:#d5a85e;line-height:1;text-shadow:0 1px 10px #000}.headerWordmark strong{font-size:15px;font-weight:500;letter-spacing:.3em;margin-right:-.3em}.headerWordmark>span{display:flex;align-items:center;gap:9px;margin-top:7px;font-size:8px;letter-spacing:.38em;margin-right:-.38em}.headerWordmark i{display:block;width:28px;height:1px;background:currentColor;opacity:.7}
+.faq article button{color:var(--ink);-webkit-appearance:none;appearance:none}.faq article button svg{color:var(--cedar)}
 @media(max-width:720px){.brandLogo.compact{width:120px;height:58px}.storyArt .brandLogo{width:88%}.footerBrand .brandLogo{width:180px}}
