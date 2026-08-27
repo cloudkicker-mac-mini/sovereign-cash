@@ -1,8 +1,8 @@
 {
-  "task": "Fix Safari blue FAQ controls",
-  "stage": "complete",
-  "nextStep": "None",
+  "task": "Fix ATM research brief mobile overflow and header overlap",
+  "stage": "verified",
+  "nextStep": "Commit and deploy the verified responsive fix to GitHub Pages",
   "blockers": [],
-  "artifacts": ["src/App.tsx", "src/styles.css", "public/images/sovereign-cash-logo.png"],
-  "timestamp": "2026-08-27T08:21:00Z"
+  "artifacts": ["src/styles.css"],
+  "timestamp": "2026-08-27T22:01:00Z"
 }
